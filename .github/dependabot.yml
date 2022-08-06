@@ -1,0 +1,10 @@
+version: 2
+updates:
+   - package-ecosystem: "npm"
+     directory: "/src/"
+     schedule:
+      interval: "monthly"
+      timezone: "Europe/London"
+     ignore:
+      - dependency-name: "@types/node"
+        versions: ["15.x", "16.x"]
