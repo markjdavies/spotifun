@@ -1,3 +1,19 @@
+import { PrismaClient } from "@prisma/client";
+import { VercelRequest, VercelResponse } from "@vercel/node";
+
+const prisma = new PrismaClient();
+
+const chooseFeaturedAlbum = async (
+  _req: VercelRequest,
+  res: VercelResponse
+): Promise<void> => {
+  const spotify = await prisma.spotifun_config.findFirst();
+
+  res.status(200).json(spotify?.user_id);
+};
+
+export default chooseFeaturedAlbum;
+
 // Refresh token
 // https://accounts.spotify.com/api/token
 
