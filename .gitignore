@@ -125,3 +125,4 @@ config/local.*
 .next
 !cypress/**/*.js
 local.json5
+.vercel
