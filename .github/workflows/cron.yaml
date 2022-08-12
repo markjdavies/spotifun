@@ -1,0 +1,12 @@
+name: through-the-day
+on:
+  schedule:
+    - cron: '0 6,10,12,14,16,18 * * *'
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Choose new featured album
+        run: |
+          curl --request GET \
+          --url 'https://spotifun.vercel.app/api/chooseFeaturedAlbum'
