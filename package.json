@@ -1,52 +1,53 @@
 {
-  "name": "template",
-  "version": "1.0.0",
-  "description": "A template repo for a quick start on nodejs projects",
-  "main": "index.js",
-  "scripts": {
-    "test": "npx jest",
-    "start:local": "vercel dev",
-    "build": "tsc -p .",
-    "lint": "npx eslint --cache --ext .ts .",
-    "format": "npx prettier --loglevel silent --write \"**/*\"",
-    "prepare": "npx husky install"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/markjdavies/node-template.git"
-  },
-  "author": "Mark Davies",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/markjdavies/node-template/issues"
-  },
-  "homepage": "https://github.com/markjdavies/node-template#readme",
-  "dependencies": {
-    "@vercel/node": "^2.5.7",
-    "ono": "^7.1.3",
-    "pino": "^7.2.0",
-    "spotify-web-api-node": "^5.0.2",
-    "znv": "^0.3.1",
-    "zod": "^3.18.0"
-  },
-  "devDependencies": {
-    "@types/jest": "^27.0.2",
-    "@types/node": "^14.17.33",
-    "@types/spotify-web-api-node": "^5.0.7",
-    "@typescript-eslint/eslint-plugin": "^5.33.0",
-    "@typescript-eslint/parser": "^5.33.0",
-    "better-npm-audit": "^3.7.3",
-    "eslint": "^8.21.0",
-    "eslint-plugin-import": "^2.26.0",
-    "husky": "^7.0.4",
-    "jest": "^27.3.1",
-    "lint-staged": "^11.2.6",
-    "prettier": "^2.7.1",
-    "ts-jest": "^27.0.7",
-    "typescript": "^4.7.4"
-  },
-  "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
-  }
+	"name": "template",
+	"version": "1.0.0",
+	"description": "A template repo for a quick start on nodejs projects",
+	"main": "index.js",
+	"scripts": {
+		"test": "npx jest",
+		"start:local": "vercel dev",
+		"build": "tsc -p .",
+		"lint": "npx eslint --cache --ext .ts .",
+		"format": "npx prettier --loglevel silent --write \"**/*\"",
+		"prepare": "npx husky install"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/markjdavies/node-template.git"
+	},
+	"author": "Mark Davies",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/markjdavies/node-template/issues"
+	},
+	"homepage": "https://github.com/markjdavies/node-template#readme",
+	"dependencies": {
+		"@vercel/node": "^2.5.7",
+		"fp-ts": "^2.12.2",
+		"ono": "^7.1.3",
+		"pino": "^7.2.0",
+		"spotify-web-api-node": "^5.0.2",
+		"znv": "^0.3.1",
+		"zod": "^3.18.0"
+	},
+	"devDependencies": {
+		"@types/jest": "^27.0.2",
+		"@types/node": "^14.17.33",
+		"@types/spotify-web-api-node": "^5.0.7",
+		"@typescript-eslint/eslint-plugin": "^5.33.0",
+		"@typescript-eslint/parser": "^5.33.0",
+		"better-npm-audit": "^3.7.3",
+		"eslint": "^8.21.0",
+		"eslint-plugin-import": "^2.26.0",
+		"husky": "^7.0.4",
+		"jest": "^27.3.1",
+		"lint-staged": "^11.2.6",
+		"prettier": "^2.7.1",
+		"ts-jest": "^27.0.7",
+		"typescript": "^4.7.4"
+	},
+	"engines": {
+		"npm": ">=7.0.0",
+		"node": ">=14.0.0"
+	}
 }

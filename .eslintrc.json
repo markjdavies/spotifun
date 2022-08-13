@@ -73,5 +73,13 @@
         "no-var": "error",
         "no-fallthrough": "error",
         "object-shorthand": "error"
-    }
+    },
+    "plugins": ["@typescript-eslint", "jest"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:jest/recommended",
+        "prettier"
+    ],
 }
